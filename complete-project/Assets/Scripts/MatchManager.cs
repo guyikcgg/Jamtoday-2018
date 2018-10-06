@@ -11,15 +11,16 @@ public class MatchManager : MonoBehaviour {
 
     public Text matchtext;
 
+    public TestCanvas SliderCanvas;
     public Population[] populations;
 
-    void OnEnable () {
-       // SceneManager.sceneLoaded += OnSceneLoaded;
-	}
+    void OnEnable() {
+        // SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
     private void OnDisable()
     {
-       // SceneManager.sceneLoaded -= OnSceneLoaded;
+        // SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void Start()
@@ -58,27 +59,42 @@ public class MatchManager : MonoBehaviour {
         matchtext.enabled = true;
         matchtext.text = (matchTime).ToString();
         matchtext.enabled = true;
-        
+
         while (matchTime >= 0)
         {
             matchtext.text = (matchTime).ToString();
             yield return new WaitForSeconds(1);
             matchTime--;
-            
+
         }
         CheckWinner();
     }
 
+    private float getTotalFakePercentage()
+    {
+        float ret = 0;
+        for (int i = 0; i < populations.Length; i++)
+        {
+            ret += populations[i].totalPercentage * populations[i].fakePercentage / 100f;
+        }
+        return ret;
+    }
+
+    private float getTotalTruthPercentage()
+    {
+        float ret = 0;
+        for (int i = 0; i < populations.Length; i++)
+        {
+            ret += populations[i].totalPercentage * populations[i].truthPercentage / 100f;
+        }
+        return ret;
+    }
+
     private void CheckWinner()
     {
-        float fakePercentage = 0;
-        float truthPercentage = 0;
+        float fakePercentage = getTotalFakePercentage();
+        float truthPercentage = getTotalTruthPercentage();
 
-        for(int i=0; i < populations.Length; i++)
-        {
-            fakePercentage += populations[i].totalPercentage * populations[i].fakePercentage / 100;
-            truthPercentage += populations[i].totalPercentage * populations[i].truthPercentage / 100;
-        }
 
         if (fakePercentage > truthPercentage)
             Debug.Log("Ganador Fake!1");
@@ -88,5 +104,9 @@ public class MatchManager : MonoBehaviour {
             Debug.Log("Empate");
     }
 
+    public void UpdateSlider()
+    {
+        SliderCanvas.UpdateSlider(getTotalFakePercentage(), getTotalTruthPercentage());
+    }
 
 }

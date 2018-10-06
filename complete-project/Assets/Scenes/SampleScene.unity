@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964127, b: 0.57481724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -245,7 +245,7 @@ MonoBehaviour:
   totalPercentage: 25
   fakePercentage: 0
   truthPercentage: 0
-  SliderCanvas: {fileID: 1536450753}
+  matchManager: {fileID: 314577646}
   increment: 5
   strongAgainst: {fileID: 1003702387}
   weakAgainst: {fileID: 1290650782}
@@ -694,6 +694,7 @@ MonoBehaviour:
   timeLeft: 60
   matchTime: 60
   matchtext: {fileID: 1490164286}
+  SliderCanvas: {fileID: 1536450753}
   populations:
   - {fileID: 1450660881}
   - {fileID: 1290650782}
@@ -1917,7 +1918,7 @@ MonoBehaviour:
   totalPercentage: 10
   fakePercentage: 0
   truthPercentage: 0
-  SliderCanvas: {fileID: 1536450753}
+  matchManager: {fileID: 314577646}
   increment: 5
   strongAgainst: {fileID: 0}
   weakAgainst: {fileID: 139623304}
@@ -2322,7 +2323,7 @@ MonoBehaviour:
   totalPercentage: 30
   fakePercentage: 0
   truthPercentage: 0
-  SliderCanvas: {fileID: 1536450753}
+  matchManager: {fileID: 314577646}
   increment: 5
   strongAgainst: {fileID: 139623304}
   weakAgainst: {fileID: 1450660881}
@@ -2693,7 +2694,7 @@ MonoBehaviour:
   totalPercentage: 35
   fakePercentage: 0
   truthPercentage: 0
-  SliderCanvas: {fileID: 1536450753}
+  matchManager: {fileID: 314577646}
   increment: 5
   strongAgainst: {fileID: 1290650782}
   weakAgainst: {fileID: 0}

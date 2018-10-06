@@ -8,7 +8,7 @@ public class Population : MonoBehaviour {
     public float totalPercentage;
     public float fakePercentage;
     public float truthPercentage;
-    public TestCanvas SliderCanvas;
+    public MatchManager matchManager;
 
     public int increment = 5;
 
@@ -86,7 +86,9 @@ public class Population : MonoBehaviour {
         {
             //StartCoroutine("DecreasePercentage");
         }
-        SliderCanvas.UpdateSlider(fakePercentage, truthPercentage);
+
+        matchManager.UpdateSlider();
+  
     }
 
     /*
