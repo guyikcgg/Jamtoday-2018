@@ -2,25 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MatchManager : MonoBehaviour {
 
     public int timeLeft = 60;
     public int matchTime = 60;
 
+    public Text matchtext;
+
     public Population[] populations;
 
     void OnEnable () {
-        SceneManager.sceneLoaded += OnSceneLoaded;
+       // SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 
     private void OnDisable()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
+       // SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    void Start()
     {
+        //Destroy(FindObjectOfType<Population>().gameObject);
+        matchtext.enabled = true;
         StartGameCountdown();
     }
 
@@ -38,6 +43,7 @@ public class MatchManager : MonoBehaviour {
 
     IEnumerator StartCountdown()
     {
+        timeLeft = 3;
         while (timeLeft >= 0)
         {
             yield return new WaitForSeconds(1);
@@ -49,10 +55,16 @@ public class MatchManager : MonoBehaviour {
 
     IEnumerator StartMatchCountdown()
     {
+        matchtext.enabled = true;
+        matchtext.text = (matchTime).ToString();
+        matchtext.enabled = true;
+        
         while (matchTime >= 0)
         {
+            matchtext.text = (matchTime).ToString();
             yield return new WaitForSeconds(1);
             matchTime--;
+            
         }
         CheckWinner();
     }
@@ -70,8 +82,10 @@ public class MatchManager : MonoBehaviour {
 
         if (fakePercentage > truthPercentage)
             Debug.Log("Ganador Fake!1");
-        else
+        else if (fakePercentage < truthPercentage)
             Debug.Log("Ganador truth");
+        else
+            Debug.Log("Empate");
     }
 
 

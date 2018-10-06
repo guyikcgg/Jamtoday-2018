@@ -47,6 +47,30 @@ public class PlayerInput : MonoBehaviour {
             else
                 comboTruth[i] = random;
         } 
+
+        if(type2 == 0)
+        {
+            activePopulation[0].EnableCanvas(Enums.PlayerType.fakeNews, comboFake);
+            for(int i=0; i < populations.Length; i++)
+            {
+                if(activePopulation[0] != populations[i])
+                {
+                    populations[i].DisableCanvas(Enums.PlayerType.fakeNews);
+                }
+            }
+        }
+
+        else
+        {
+            activePopulation[1].EnableCanvas(Enums.PlayerType.truthNews, comboTruth);
+            for (int i = 0; i < populations.Length; i++)
+            {
+                if (activePopulation[1] != populations[i])
+                {
+                    populations[i].DisableCanvas(Enums.PlayerType.truthNews);
+                }
+            }
+        }
     }
 
     private void CheckCombo(Enums.PlayerType type, int input)

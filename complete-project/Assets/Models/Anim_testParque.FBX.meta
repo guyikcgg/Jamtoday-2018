@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: b3c01bb897c31934a99ca77880dab718
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Child_Cabeza
+    100004: Child_Cabeza001
+    100006: Child_Cuerpo
+    100008: Child_Cuerpo001
+    100010: Child_Pelo
+    100012: Child_Pelo001
+    100014: Child_Pier_Der
+    100016: Child_Pier_Der001
+    100018: Child_Pier_Der002
+    100020: Child_Pier_Der003
+    100022: Parque
+    100024: Sphere001
+    400000: //RootNode
+    400002: Child_Cabeza
+    400004: Child_Cabeza001
+    400006: Child_Cuerpo
+    400008: Child_Cuerpo001
+    400010: Child_Pelo
+    400012: Child_Pelo001
+    400014: Child_Pier_Der
+    400016: Child_Pier_Der001
+    400018: Child_Pier_Der002
+    400020: Child_Pier_Der003
+    400022: Parque
+    400024: Sphere001
+    2100000: Child_Cuerpo
+    2100002: Child_Cabeza
+    2100004: Child_Pelo
+    2100006: ParqueValla
+    2100008: ParqueMetal02
+    2100010: ParqueMetal
+    2100012: ParqueArena
+    2100014: ParqueTronco
+    2100016: ParqueHoja
+    2100018: ParqueHierba
+    2100020: Ball_White
+    2100022: Ball_Red
+    2300000: Child_Cabeza
+    2300002: Child_Cabeza001
+    2300004: Child_Cuerpo
+    2300006: Child_Cuerpo001
+    2300008: Child_Pelo
+    2300010: Child_Pelo001
+    2300012: Child_Pier_Der
+    2300014: Child_Pier_Der001
+    2300016: Child_Pier_Der002
+    2300018: Child_Pier_Der003
+    2300020: Parque
+    2300022: Sphere001
+    3300000: Child_Cabeza
+    3300002: Child_Cabeza001
+    3300004: Child_Cuerpo
+    3300006: Child_Cuerpo001
+    3300008: Child_Pelo
+    3300010: Child_Pelo001
+    3300012: Child_Pier_Der
+    3300014: Child_Pier_Der001
+    3300016: Child_Pier_Der002
+    3300018: Child_Pier_Der003
+    3300020: Parque
+    3300022: Sphere001
+    4300000: Child_Cuerpo
+    4300002: Child_Cabeza
+    4300004: Child_Pelo
+    4300006: Child_Pier_Der
+    4300008: Child_Pier_Der001
+    4300010: Parque
+    4300012: Child_Cuerpo001
+    4300014: Child_Cabeza001
+    4300016: Child_Pelo001
+    4300018: Child_Pier_Der002
+    4300020: Child_Pier_Der003
+    4300022: Sphere001
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
