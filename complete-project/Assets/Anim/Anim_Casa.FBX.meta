@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 049a5d386ac99e94bb6b9f3dfa68a971
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Abuela_Cabeza
+    100002: Abuela_Cabeza001
+    100004: Abuela_Cabeza002
+    100006: Abuela_Cuerpo
+    100008: Abuela_Cuerpo001
+    100010: Abuela_Cuerpo002
+    100012: Abuela_Pelo
+    100014: Abuela_Pelo001
+    100016: Abuela_Pelo002
+    100018: Abuela_Pier_Der
+    100020: Abuela_Pier_Der001
+    100022: Abuela_Pier_Der002
+    100024: Abuela_Pier_Izq
+    100026: Abuela_Pier_Izq001
+    100028: Abuela_Pier_Izq002
+    100030: Abuela_Rulo
+    100032: Abuela_Rulo001
+    100034: Abuela_Rulo002
+    100036: //RootNode
+    100038: Casa
+    100040: Object001
+    400000: Abuela_Cabeza
+    400002: Abuela_Cabeza001
+    400004: Abuela_Cabeza002
+    400006: Abuela_Cuerpo
+    400008: Abuela_Cuerpo001
+    400010: Abuela_Cuerpo002
+    400012: Abuela_Pelo
+    400014: Abuela_Pelo001
+    400016: Abuela_Pelo002
+    400018: Abuela_Pier_Der
+    400020: Abuela_Pier_Der001
+    400022: Abuela_Pier_Der002
+    400024: Abuela_Pier_Izq
+    400026: Abuela_Pier_Izq001
+    400028: Abuela_Pier_Izq002
+    400030: Abuela_Rulo
+    400032: Abuela_Rulo001
+    400034: Abuela_Rulo002
+    400036: //RootNode
+    400038: Casa
+    400040: Object001
+    2100000: CasaPared
+    2100002: CasaTejado
+    2100004: CasaHojas
+    2100006: CasaTronco
+    2100008: CasaValla
+    2100010: CasaSuelo
+    2100012: Abuela_Cuerpo
+    2100014: Abuela_Cabeza
+    2100016: Abuela_Pelo
+    2100018: Abuela_Rulos
+    2300000: Abuela_Cabeza
+    2300002: Abuela_Cabeza001
+    2300004: Abuela_Cabeza002
+    2300006: Abuela_Cuerpo
+    2300008: Abuela_Cuerpo001
+    2300010: Abuela_Cuerpo002
+    2300012: Abuela_Pelo
+    2300014: Abuela_Pelo001
+    2300016: Abuela_Pelo002
+    2300018: Abuela_Pier_Der
+    2300020: Abuela_Pier_Der001
+    2300022: Abuela_Pier_Der002
+    2300024: Abuela_Pier_Izq
+    2300026: Abuela_Pier_Izq001
+    2300028: Abuela_Pier_Izq002
+    2300030: Abuela_Rulo
+    2300032: Abuela_Rulo001
+    2300034: Abuela_Rulo002
+    2300036: Casa
+    2300038: Object001
+    3300000: Abuela_Cabeza
+    3300002: Abuela_Cabeza001
+    3300004: Abuela_Cabeza002
+    3300006: Abuela_Cuerpo
+    3300008: Abuela_Cuerpo001
+    3300010: Abuela_Cuerpo002
+    3300012: Abuela_Pelo
+    3300014: Abuela_Pelo001
+    3300016: Abuela_Pelo002
+    3300018: Abuela_Pier_Der
+    3300020: Abuela_Pier_Der001
+    3300022: Abuela_Pier_Der002
+    3300024: Abuela_Pier_Izq
+    3300026: Abuela_Pier_Izq001
+    3300028: Abuela_Pier_Izq002
+    3300030: Abuela_Rulo
+    3300032: Abuela_Rulo001
+    3300034: Abuela_Rulo002
+    3300036: Casa
+    3300038: Object001
+    4300000: Casa
+    4300002: Abuela_Cuerpo
+    4300004: Abuela_Cabeza
+    4300006: Abuela_Pelo
+    4300008: Abuela_Rulo
+    4300010: Abuela_Pier_Der
+    4300012: Abuela_Pier_Izq
+    4300014: Abuela_Cuerpo001
+    4300016: Abuela_Cabeza001
+    4300018: Abuela_Pelo001
+    4300020: Abuela_Rulo001
+    4300022: Abuela_Pier_Der001
+    4300024: Abuela_Pier_Izq001
+    4300026: Abuela_Cuerpo002
+    4300028: Abuela_Cabeza002
+    4300030: Abuela_Pelo002
+    4300032: Abuela_Rulo002
+    4300034: Object001
+    4300036: Abuela_Pier_Der002
+    4300038: Abuela_Pier_Izq002
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: abafbf83db1f27a4f982a9e2dfbe8ec1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cientifico_Corbata
+    100002: Empresario_Bata
+    100004: Empresario_Cabeza
+    100006: Empresario_Gafas
+    100008: Empresario_Maletin
+    100010: Empresario_ModePig
+    100012: Empresario_Pelo
+    100014: Empresario_Pier_Der
+    100016: Empresario_Pier_Izq
+    100018: //RootNode
+    400000: Cientifico_Corbata
+    400002: Empresario_Bata
+    400004: Empresario_Cabeza
+    400006: Empresario_Gafas
+    400008: Empresario_Maletin
+    400010: Empresario_ModePig
+    400012: Empresario_Pelo
+    400014: Empresario_Pier_Der
+    400016: Empresario_Pier_Izq
+    400018: //RootNode
+    2100000: Empresario_Cuerpo
+    2100002: Empresario_Cabeza
+    2100004: Empresario_Pelo
+    2100006: Empresario_Gafas
+    2100008: Empresario_ModePig
+    2100010: Empresario_Chaqueta
+    2100012: Empresario_Maletin
+    2100014: Cientifico_Corbata
+    2300000: Cientifico_Corbata
+    2300002: Empresario_Bata
+    2300004: Empresario_Cabeza
+    2300006: Empresario_Gafas
+    2300008: Empresario_Maletin
+    2300010: Empresario_ModePig
+    2300012: Empresario_Pelo
+    2300014: Empresario_Pier_Der
+    2300016: Empresario_Pier_Izq
+    2300018: //RootNode
+    3300000: Cientifico_Corbata
+    3300002: Empresario_Bata
+    3300004: Empresario_Cabeza
+    3300006: Empresario_Gafas
+    3300008: Empresario_Maletin
+    3300010: Empresario_ModePig
+    3300012: Empresario_Pelo
+    3300014: Empresario_Pier_Der
+    3300016: Empresario_Pier_Izq
+    3300018: //RootNode
+    4300000: Empresario_Cuerpo
+    4300002: Empresario_Cabeza
+    4300004: Empresario_Pelo
+    4300006: Empresario_Gafas
+    4300008: Empresario_ModePig
+    4300010: Empresario_Bata
+    4300012: Empresario_Pier_Izq
+    4300014: Empresario_Pier_Der
+    4300016: Empresario_Maletin
+    4300018: Cientifico_Corbata
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
