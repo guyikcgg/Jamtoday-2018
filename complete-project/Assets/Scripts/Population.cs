@@ -5,8 +5,8 @@ using UnityEngine;
 public class Population : MonoBehaviour {
 
     public float totalPercentage;
-    private float fakePercentage;
-    private float truthPercentage;
+    public float fakePercentage;
+    public float truthPercentage;
 
     public int increment = 5;
 
