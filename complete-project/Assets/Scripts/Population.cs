@@ -23,6 +23,13 @@ public class Population : MonoBehaviour {
     public float decreaseAmmount = 5;
     public int timeToDecrease = 5;
 
+    public Text displayPercentage;
+
+    private void Start()
+    {
+        displayPercentage.text = "0% / 0%";
+    }
+
     public void EnableCanvas(Enums.PlayerType type, int[] input)
     {
         if(type == Enums.PlayerType.fakeNews)
@@ -33,6 +40,11 @@ public class Population : MonoBehaviour {
         {
             canvas[1].EnableButtons(input);
         }
+    }
+
+    private void UpdatePercentage()
+    {
+        displayPercentage.text = fakePercentage.ToString() + "% / " + truthPercentage.ToString() + "%";
     }
 
     public void DisableCanvas(Enums.PlayerType type)
@@ -88,7 +100,7 @@ public class Population : MonoBehaviour {
         }
 
         matchManager.UpdateSlider();
-  
+        UpdatePercentage();
     }
 
     /*
