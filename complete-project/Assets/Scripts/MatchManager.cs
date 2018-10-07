@@ -88,5 +88,8 @@ public class MatchManager : MonoBehaviour {
             Debug.Log("Empate");
     }
 
-
+    public void CloseApplication() {
+        Debug.Log("ffdfdfd");
+        Application.Quit();
+    }
 }
