@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 09997bbe0f372434889176378ee9c7b4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cientifico_Cabeza
+    100004: Cientifico_Cabeza001
+    100006: Cientifico_Cabeza002
+    100008: Cientifico_Cuerpo
+    100010: Cientifico_Cuerpo001
+    100012: Cientifico_Cuerpo002
+    100014: Cientifico_Pelo001
+    100016: Cientifico_Pelo002
+    100018: Cientifico_Pelo004
+    100020: Cientifico_Pier_Izq
+    100022: Cientifico_Pier_Izq001
+    100024: Cientifico_Pier_Izq002
+    100026: Cientifico_Pier_Izq003
+    100028: Cientifico_Pier_Izq004
+    100030: Cientifico_Pier_Izq005
+    100032: Cientifico_Proveta
+    100034: Cientifico_Proveta001
+    100036: Cientifico_Proveta002
+    100038: Laboratorio
+    400000: //RootNode
+    400002: Cientifico_Cabeza
+    400004: Cientifico_Cabeza001
+    400006: Cientifico_Cabeza002
+    400008: Cientifico_Cuerpo
+    400010: Cientifico_Cuerpo001
+    400012: Cientifico_Cuerpo002
+    400014: Cientifico_Pelo001
+    400016: Cientifico_Pelo002
+    400018: Cientifico_Pelo004
+    400020: Cientifico_Pier_Izq
+    400022: Cientifico_Pier_Izq001
+    400024: Cientifico_Pier_Izq002
+    400026: Cientifico_Pier_Izq003
+    400028: Cientifico_Pier_Izq004
+    400030: Cientifico_Pier_Izq005
+    400032: Cientifico_Proveta
+    400034: Cientifico_Proveta001
+    400036: Cientifico_Proveta002
+    400038: Laboratorio
+    2100000: 'Material #118'
+    2100002: LaboratorioPared_02
+    2100004: LaboratorioSuelo
+    2100006: LaboratorioPared
+    2100008: LaboratorioPaneles
+    2100010: LaboratorioTubo
+    2100012: LaboratorioEsfera
+    2100014: Cientifico_Cuerpo
+    2100016: Cientifico_Piernas
+    2100018: Cientifico_Cabeza
+    2100020: 'Material #48'
+    2100022: Cientifico_Proveta
+    2300000: Cientifico_Cabeza
+    2300002: Cientifico_Cabeza001
+    2300004: Cientifico_Cabeza002
+    2300006: Cientifico_Cuerpo
+    2300008: Cientifico_Cuerpo001
+    2300010: Cientifico_Cuerpo002
+    2300012: Cientifico_Pelo001
+    2300014: Cientifico_Pelo002
+    2300016: Cientifico_Pelo004
+    2300018: Cientifico_Pier_Izq
+    2300020: Cientifico_Pier_Izq001
+    2300022: Cientifico_Pier_Izq002
+    2300024: Cientifico_Pier_Izq003
+    2300026: Cientifico_Pier_Izq004
+    2300028: Cientifico_Pier_Izq005
+    2300030: Cientifico_Proveta
+    2300032: Cientifico_Proveta001
+    2300034: Cientifico_Proveta002
+    2300036: Laboratorio
+    3300000: Cientifico_Cabeza
+    3300002: Cientifico_Cabeza001
+    3300004: Cientifico_Cabeza002
+    3300006: Cientifico_Cuerpo
+    3300008: Cientifico_Cuerpo001
+    3300010: Cientifico_Cuerpo002
+    3300012: Cientifico_Pelo001
+    3300014: Cientifico_Pelo002
+    3300016: Cientifico_Pelo004
+    3300018: Cientifico_Pier_Izq
+    3300020: Cientifico_Pier_Izq001
+    3300022: Cientifico_Pier_Izq002
+    3300024: Cientifico_Pier_Izq003
+    3300026: Cientifico_Pier_Izq004
+    3300028: Cientifico_Pier_Izq005
+    3300030: Cientifico_Proveta
+    3300032: Cientifico_Proveta001
+    3300034: Cientifico_Proveta002
+    3300036: Laboratorio
+    4300000: Laboratorio
+    4300002: Cientifico_Cuerpo
+    4300004: Cientifico_Pier_Izq
+    4300006: Cientifico_Pier_Izq001
+    4300008: Cientifico_Cabeza
+    4300010: Cientifico_Pelo001
+    4300012: Cientifico_Proveta
+    4300014: Cientifico_Cuerpo001
+    4300016: Cientifico_Pier_Izq002
+    4300018: Cientifico_Pier_Izq003
+    4300020: Cientifico_Proveta001
+    4300022: Cientifico_Cabeza001
+    4300024: Cientifico_Pelo002
+    4300026: Cientifico_Cuerpo002
+    4300028: Cientifico_Proveta002
+    4300030: Cientifico_Pier_Izq004
+    4300032: Cientifico_Cabeza002
+    4300034: Cientifico_Pelo004
+    4300036: Cientifico_Pier_Izq005
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
