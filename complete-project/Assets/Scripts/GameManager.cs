@@ -8,6 +8,7 @@ public class GameManager : Singleton<GameManager> {
 
     public bool disableInput = false;
     public int matchTime = 60;
+    public int winner; //0 = fake 1 = truth 2 = tie
 
     //TODO: Add scene management (Menu scene)
     public void StartGame()
@@ -22,6 +23,11 @@ public class GameManager : Singleton<GameManager> {
         if(scene.name == "LoadingScene")
         {
             StartCoroutine("AnyKey");
+        }
+
+        if(scene.name == "EndScene")
+        {
+            Debug.Log("Guay!!");
         }
     }
 

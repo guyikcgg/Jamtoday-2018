@@ -14,6 +14,14 @@ public class MatchManager : MonoBehaviour {
     public TestCanvas SliderCanvas;
     public Population[] populations;
 
+    public Image fotaso1, fotaso2;
+
+
+    public Canvas canvaso1;
+    public Sonido sonido;
+
+    public Sonido2 aaaaaaaaaaaaaaaaaaa;
+
     void OnEnable() {
         // SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -27,13 +35,16 @@ public class MatchManager : MonoBehaviour {
     {
         //Destroy(FindObjectOfType<Population>().gameObject);
         matchtext.enabled = true;
+        aaaaaaaaaaaaaaaaaaa = FindObjectOfType<Sonido2>();
         StartGameCountdown();
+       
     }
 
     public void StartGameCountdown()
     {
+        canvaso1.enabled = false;
         GameManager.Instance.disableInput = true;
-        timeLeft = 3;
+        timeLeft = 9;
         StartCoroutine("StartCountdown");
     }
 
@@ -44,14 +55,29 @@ public class MatchManager : MonoBehaviour {
 
     IEnumerator StartCountdown()
     {
-        timeLeft = 3;
+        aaaaaaaaaaaaaaaaaaa.PlaySound();
+       // timeLeft = 20;
         while (timeLeft >= 0)
         {
+            if (timeLeft == 3)
+            {
+                fotaso2.enabled = false;
+                fotaso1.color = new Color(255, 255, 255, 255);
+                Destroy(aaaaaaaaaaaaaaaaaaa.gameObject);
+
+
+            }
+            if(timeLeft == 0)
+            {
+                fotaso1.enabled = false;
+            }
             yield return new WaitForSeconds(1);
             timeLeft--;
         }
         GameManager.Instance.disableInput = false;
         StartGeneralCountdown();
+        canvaso1.enabled = true;
+        sonido.PlayStartSong();
     }
 
     IEnumerator StartMatchCountdown()
@@ -113,11 +139,15 @@ public class MatchManager : MonoBehaviour {
 
 
         if (fakePercentage > truthPercentage)
-            Debug.Log("Ganador Fake!1");
+        {
+            GameManager.Instance.winner = 0;
+        }
         else if (fakePercentage < truthPercentage)
-            Debug.Log("Ganador truth");
+            GameManager.Instance.winner = 1;
         else
-            Debug.Log("Empate");
+            GameManager.Instance.winner = 2;
+
+        SceneManager.LoadScene(3);
     }
 
     public void UpdateSlider()
@@ -126,7 +156,6 @@ public class MatchManager : MonoBehaviour {
     }
 
     public void CloseApplication() {
-        Debug.Log("ffdfdfd");
         Application.Quit();
     }
 }
