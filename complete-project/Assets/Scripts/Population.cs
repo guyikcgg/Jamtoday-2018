@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Population : MonoBehaviour {
+public class Population : MonoBehaviour
+{
 
     public float totalPercentage;
     public float fakePercentage;
     public float truthPercentage;
-    public TestCanvas SliderCanvas;
+    public MatchManager matchManager;
 
     public int increment = 5;
 
@@ -32,7 +33,7 @@ public class Population : MonoBehaviour {
 
     public void EnableCanvas(Enums.PlayerType type, int[] input)
     {
-        if(type == Enums.PlayerType.fakeNews)
+        if (type == Enums.PlayerType.fakeNews)
         {
             canvas[0].EnableButtons(input);
         }
@@ -90,41 +91,27 @@ public class Population : MonoBehaviour {
         if (fakePercentage > 100) fakePercentage = 100;
         if (truthPercentage > 100) truthPercentage = 100;
 
-        if (fakePercentage >= threshold && strongAgainst != null)
-        {
-            //StartCoroutine("DecreasePercentage");
-        }
-        else if (truthPercentage >= threshold && strongAgainst != null)
-        {
-            //StartCoroutine("DecreasePercentage");
-        }
-        SliderCanvas.UpdateSlider(fakePercentage, truthPercentage);
+        matchManager.UpdateSlider();
         UpdatePercentage();
     }
 
-    /*
-    IEnumerator DecreasePercentage()
+    public void DecreasePercentage(Enums.PlayerType type)
     {
-        if (weakAgainst != null)
-        while (fakePercentage >= threshold || truthPercentage >= threshold)
+        if (type == Enums.PlayerType.fakeNews)
         {
-            if (fakePercentage > truthPercentage)
-            {
-                print("decrease truth");
-                // weakAgainst.truthPercentage -= decreaseAmmount;
-                weakAgainst.AddPercentage(Enums.PlayerType.fakeNews);
-                //if (weakAgainst.truthPercentage < 0) weakAgainst.truthPercentage = 0;
-            }
-            else if (fakePercentage < truthPercentage)
-            {
-                print("decrease fake");
-                weakAgainst.AddPercentage(Enums.PlayerType.truthNews);
-                //weakAgainst.fakePercentage -= decreaseAmmount;
-                //if (weakAgainst.fakePercentage < 0) weakAgainst.fakePercentage = 0;
-            }
-            yield return new WaitForSeconds(timeToDecrease);
+            fakePercentage -= increment;
         }
+        else if (type == Enums.PlayerType.truthNews)
+        {
+            truthPercentage -= increment;
+        }
+        if (fakePercentage < 0) fakePercentage = 0;
+        if (truthPercentage < 0) truthPercentage = 0;
+
+        matchManager.UpdateSlider();
+        UpdatePercentage();
     }
-    */
 }
+
+
 

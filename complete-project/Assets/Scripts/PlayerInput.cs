@@ -10,11 +10,12 @@ public class PlayerInput : MonoBehaviour {
     public Population[] populations;
 
     private Population[] lastPopulation = new Population[2];
+    public CanvasComboController[] canvas;
 
     private int[] comboFake;
     private int[] comboTruth;
 
-    private int indexFake, indexTruth;
+    private int indexFake, indexTruth = 0;
 
     private void GenerateCombo(Enums.PlayerType type)
     {
@@ -75,37 +76,47 @@ public class PlayerInput : MonoBehaviour {
 
     private void CheckCombo(Enums.PlayerType type, int input)
     {
-        if(Enums.PlayerType.fakeNews == type)
+        
+
+        if (Enums.PlayerType.fakeNews == type)
         {
-            if(comboFake[indexFake] == input)
+            if (comboFake == null || comboFake.Length <= indexFake) return;
+            if (comboFake[indexFake] == input)
             {
                 indexFake++;
-                if(comboFake.Length == indexFake)
+                for(int i=0; i<8; i+=2) canvas[i].TickButton();
+                if (comboFake.Length == indexFake)
                 {
+                    // Combo was successfully entered [fake]
                     activePopulation[0].AddPercentage(type);
                     GenerateCombo(type);
                 }
             }
             else
             {
-                GenerateCombo(type);
+                for (int i = 0; i < 8; i += 2) canvas[i].BadButton();
+                StartCoroutine(WaitForBadButtonAnimation(type, 0.3f));
             }
         }
 
         else 
         {
+            if (comboTruth == null || comboTruth.Length <= indexTruth) return;
             if (comboTruth[indexTruth] == input)
             {
                 indexTruth++;
+                for (int i = 1; i < 8; i+=2) canvas[i].TickButton();
                 if (comboTruth.Length == indexTruth)
                 {
+                    // Combo was successfully entered [truth]
                     activePopulation[1].AddPercentage(type);
                     GenerateCombo(type);
                 }
             }
             else
             {
-                GenerateCombo(type);
+                for (int i = 1; i < 8; i += 2) canvas[i].BadButton();
+                StartCoroutine(WaitForBadButtonAnimation(type, 0.2f));
             }
         }
     }
@@ -216,6 +227,15 @@ public class PlayerInput : MonoBehaviour {
             #endregion
         }
 
+    }
+
+    IEnumerator WaitForBadButtonAnimation(Enums.PlayerType type, float time)
+    {
+        for (float i = 0; i < time; i += Time.deltaTime)
+        {
+            yield return 0;
+        }
+        GenerateCombo(type);
     }
 
 }

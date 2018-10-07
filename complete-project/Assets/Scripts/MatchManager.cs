@@ -6,33 +6,45 @@ using UnityEngine.UI;
 
 public class MatchManager : MonoBehaviour {
 
-    public int timeLeft = 60;
-    public int matchTime = 60;
+    public int timeLeft; // Modify GameObject
+    public int matchTime;
 
     public Text matchtext;
 
+    public TestCanvas SliderCanvas;
     public Population[] populations;
 
-    void OnEnable () {
-       // SceneManager.sceneLoaded += OnSceneLoaded;
-	}
+    public Image fotaso1, fotaso2;
+
+
+    public Canvas canvaso1;
+    public Sonido sonido;
+
+    public Sonido2 aaaaaaaaaaaaaaaaaaa;
+
+    void OnEnable() {
+        // SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
     private void OnDisable()
     {
-       // SceneManager.sceneLoaded -= OnSceneLoaded;
+        // SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void Start()
     {
         //Destroy(FindObjectOfType<Population>().gameObject);
         matchtext.enabled = true;
+        aaaaaaaaaaaaaaaaaaa = FindObjectOfType<Sonido2>();
         StartGameCountdown();
+       
     }
 
     public void StartGameCountdown()
     {
+        canvaso1.enabled = false;
         GameManager.Instance.disableInput = true;
-        timeLeft = 3;
+        timeLeft = 9;
         StartCoroutine("StartCountdown");
     }
 
@@ -41,16 +53,43 @@ public class MatchManager : MonoBehaviour {
         StartCoroutine("StartMatchCountdown");
     }
 
+    IEnumerator AudioDown()
+    {
+        yield return new WaitForSeconds(4);
+        while (aaaaaaaaaaaaaaaaaaa.aS2.volume > 0)
+        {
+            aaaaaaaaaaaaaaaaaaa.aS2.volume -= Time.deltaTime * 0.5f;
+            yield return null;
+        }
+        Destroy(aaaaaaaaaaaaaaaaaaa.gameObject);
+    }
+
     IEnumerator StartCountdown()
     {
-        timeLeft = 3;
+        aaaaaaaaaaaaaaaaaaa.PlaySound();
+        StartCoroutine("AudioDown");
+        // timeLeft = 20;
         while (timeLeft >= 0)
         {
+            if (timeLeft == 3)
+            {
+                fotaso2.enabled = false;
+                fotaso1.color = new Color(255, 255, 255, 255);
+               
+
+
+            }
+            if(timeLeft == 0)
+            {
+                fotaso1.enabled = false;
+            }
             yield return new WaitForSeconds(1);
             timeLeft--;
         }
         GameManager.Instance.disableInput = false;
         StartGeneralCountdown();
+        canvaso1.enabled = true;
+        sonido.PlayStartSong();
     }
 
     IEnumerator StartMatchCountdown()
@@ -58,38 +97,77 @@ public class MatchManager : MonoBehaviour {
         matchtext.enabled = true;
         matchtext.text = (matchTime).ToString();
         matchtext.enabled = true;
-        
+        Population pop;
+
         while (matchTime >= 0)
         {
             matchtext.text = (matchTime).ToString();
             yield return new WaitForSeconds(1);
             matchTime--;
-            
+
+            for (int i = 0; i < populations.Length; i++)
+            {
+                pop = populations[i];
+                if (matchTime % pop.timeToDecrease > 0) continue;
+                if (pop.strongAgainst == null) continue;
+                    
+                if (pop.fakePercentage >= pop.threshold)
+                {
+                    pop.strongAgainst.DecreasePercentage(Enums.PlayerType.truthNews);
+                }
+                else if (pop.truthPercentage >= pop.threshold)
+                {
+                    pop.strongAgainst.DecreasePercentage(Enums.PlayerType.fakeNews);
+                }   
+            }
         }
         CheckWinner();
     }
 
+    private float getTotalFakePercentage()
+    {
+        float ret = 0;
+        for (int i = 0; i < populations.Length; i++)
+        {
+            ret += populations[i].totalPercentage * populations[i].fakePercentage / 100f;
+        }
+        return ret;
+    }
+
+    private float getTotalTruthPercentage()
+    {
+        float ret = 0;
+        for (int i = 0; i < populations.Length; i++)
+        {
+            ret += populations[i].totalPercentage * populations[i].truthPercentage / 100f;
+        }
+        return ret;
+    }
+
     private void CheckWinner()
     {
-        float fakePercentage = 0;
-        float truthPercentage = 0;
+        float fakePercentage = getTotalFakePercentage();
+        float truthPercentage = getTotalTruthPercentage();
 
-        for(int i=0; i < populations.Length; i++)
-        {
-            fakePercentage += populations[i].totalPercentage * populations[i].fakePercentage / 100;
-            truthPercentage += populations[i].totalPercentage * populations[i].truthPercentage / 100;
-        }
 
         if (fakePercentage > truthPercentage)
-            Debug.Log("Ganador Fake!1");
+        {
+            GameManager.Instance.winner = 0;
+        }
         else if (fakePercentage < truthPercentage)
-            Debug.Log("Ganador truth");
+            GameManager.Instance.winner = 1;
         else
-            Debug.Log("Empate");
+            GameManager.Instance.winner = 2;
+
+        SceneManager.LoadScene(3);
+    }
+
+    public void UpdateSlider()
+    {
+        SliderCanvas.UpdateSlider(getTotalFakePercentage(), getTotalTruthPercentage());
     }
 
     public void CloseApplication() {
-        Debug.Log("ffdfdfd");
         Application.Quit();
     }
 }
