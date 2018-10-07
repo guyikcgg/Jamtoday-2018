@@ -125,4 +125,8 @@ public class MatchManager : MonoBehaviour {
         SliderCanvas.UpdateSlider(getTotalFakePercentage(), getTotalTruthPercentage());
     }
 
+    public void CloseApplication() {
+        Debug.Log("ffdfdfd");
+        Application.Quit();
+    }
 }

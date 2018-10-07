@@ -11,11 +11,22 @@ public class GameManager : Singleton<GameManager> {
     public int matchTime = 60;
 
     //TODO: Add scene management (Menu scene)
-    protected virtual void Start()
+    public void StartGame()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(1);
+       
     }
-    
-    
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.name == "LoadingScene")
+        {
+            Debug.Log("caca");
+        }
+    }
+
+
+
 }
 
