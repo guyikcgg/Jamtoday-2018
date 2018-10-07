@@ -94,7 +94,8 @@ public class PlayerInput : MonoBehaviour {
             }
             else
             {
-                GenerateCombo(type);
+                for (int i = 0; i < 8; i += 2) canvas[i].BadButton();
+                StartCoroutine(WaitForBadButtonAnimation(type, 0.3f));
             }
         }
 
@@ -114,7 +115,8 @@ public class PlayerInput : MonoBehaviour {
             }
             else
             {
-                GenerateCombo(type);
+                for (int i = 1; i < 8; i += 2) canvas[i].BadButton();
+                StartCoroutine(WaitForBadButtonAnimation(type, 0.2f));
             }
         }
     }
@@ -225,6 +227,15 @@ public class PlayerInput : MonoBehaviour {
             #endregion
         }
 
+    }
+
+    IEnumerator WaitForBadButtonAnimation(Enums.PlayerType type, float time)
+    {
+        for (float i = 0; i < time; i += Time.deltaTime)
+        {
+            yield return 0;
+        }
+        GenerateCombo(type);
     }
 
 }
