@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager> {
 
-
-   
     public bool disableInput = false;
     public int matchTime = 60;
 
@@ -22,8 +21,17 @@ public class GameManager : Singleton<GameManager> {
     {
         if(scene.name == "LoadingScene")
         {
-            Debug.Log("caca");
+            StartCoroutine("AnyKey");
         }
+    }
+
+    IEnumerator AnyKey()
+    {
+        while (!Input.anyKeyDown) {
+            yield return null;
+        }
+
+        SceneManager.LoadScene(2);
     }
 
 
