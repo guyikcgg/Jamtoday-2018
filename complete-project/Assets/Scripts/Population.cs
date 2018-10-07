@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Population : MonoBehaviour {
+public class Population : MonoBehaviour
+{
 
     public float totalPercentage;
     public float fakePercentage;
@@ -32,7 +33,7 @@ public class Population : MonoBehaviour {
 
     public void EnableCanvas(Enums.PlayerType type, int[] input)
     {
-        if(type == Enums.PlayerType.fakeNews)
+        if (type == Enums.PlayerType.fakeNews)
         {
             canvas[0].EnableButtons(input);
         }
@@ -94,5 +95,23 @@ public class Population : MonoBehaviour {
         UpdatePercentage();
     }
 
+    public void DecreasePercentage(Enums.PlayerType type)
+    {
+        if (type == Enums.PlayerType.fakeNews)
+        {
+            fakePercentage -= increment;
+        }
+        else if (type == Enums.PlayerType.truthNews)
+        {
+            truthPercentage -= increment;
+        }
+        if (fakePercentage < 0) fakePercentage = 0;
+        if (truthPercentage < 0) truthPercentage = 0;
+
+        matchManager.UpdateSlider();
+        UpdatePercentage();
+    }
 }
+
+
 

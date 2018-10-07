@@ -75,11 +75,11 @@ public class MatchManager : MonoBehaviour {
                     
                 if (pop.fakePercentage >= pop.threshold)
                 {
-                    pop.strongAgainst.AddPercentage(Enums.PlayerType.fakeNews);
+                    pop.strongAgainst.DecreasePercentage(Enums.PlayerType.truthNews);
                 }
                 else if (pop.truthPercentage >= pop.threshold)
                 {
-                    pop.strongAgainst.AddPercentage(Enums.PlayerType.truthNews);
+                    pop.strongAgainst.DecreasePercentage(Enums.PlayerType.fakeNews);
                 }   
             }
         }
