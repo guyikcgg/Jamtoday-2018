@@ -1,0 +1,271 @@
+fileFormatVersion: 2
+guid: 3c2a36d63bad6b1408c5f281ae27d9fa
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cientifico_Corbata
+    100004: Cientifico_Corbata001
+    100006: Cientifico_Corbata002
+    100008: Empresario_Bata
+    100010: Empresario_Bata001
+    100012: Empresario_Bata002
+    100014: Empresario_Cabeza
+    100016: Empresario_Cabeza001
+    100018: Empresario_Cabeza002
+    100020: Empresario_Cuerpo
+    100022: Empresario_Cuerpo001
+    100024: Empresario_Cuerpo002
+    100026: Empresario_Gafas
+    100028: Empresario_Gafas001
+    100030: Empresario_Gafas002
+    100032: Empresario_Maletin
+    100034: Empresario_Maletin001
+    100036: Empresario_Maletin002
+    100038: Empresario_Pelo
+    100040: Empresario_Pelo001
+    100042: Empresario_Pelo002
+    100044: Empresario_Pier_Der
+    100046: Empresario_Pier_Der001
+    100048: Empresario_Pier_Der002
+    100050: Empresario_Pier_Izq
+    100052: Empresario_Pier_Izq001
+    100054: Empresario_Pier_Izq002
+    100056: Rascacielos
+    400000: //RootNode
+    400002: Cientifico_Corbata
+    400004: Cientifico_Corbata001
+    400006: Cientifico_Corbata002
+    400008: Empresario_Bata
+    400010: Empresario_Bata001
+    400012: Empresario_Bata002
+    400014: Empresario_Cabeza
+    400016: Empresario_Cabeza001
+    400018: Empresario_Cabeza002
+    400020: Empresario_Cuerpo
+    400022: Empresario_Cuerpo001
+    400024: Empresario_Cuerpo002
+    400026: Empresario_Gafas
+    400028: Empresario_Gafas001
+    400030: Empresario_Gafas002
+    400032: Empresario_Maletin
+    400034: Empresario_Maletin001
+    400036: Empresario_Maletin002
+    400038: Empresario_Pelo
+    400040: Empresario_Pelo001
+    400042: Empresario_Pelo002
+    400044: Empresario_Pier_Der
+    400046: Empresario_Pier_Der001
+    400048: Empresario_Pier_Der002
+    400050: Empresario_Pier_Izq
+    400052: Empresario_Pier_Izq001
+    400054: Empresario_Pier_Izq002
+    400056: Rascacielos
+    2100000: Rascacielos01
+    2100002: 'Material #131'
+    2100004: 'Material #132'
+    2100006: Rascacielos02
+    2100008: Empresario_Cuerpo
+    2100010: Empresario_Cabeza
+    2100012: Empresario_Pelo
+    2100014: Empresario_Gafas
+    2100016: Empresario_Chaqueta
+    2100018: Empresario_Maletin
+    2100020: Cientifico_Corbata
+    2300000: Cientifico_Corbata
+    2300002: Cientifico_Corbata001
+    2300004: Cientifico_Corbata002
+    2300006: Empresario_Bata
+    2300008: Empresario_Bata001
+    2300010: Empresario_Bata002
+    2300012: Empresario_Cabeza
+    2300014: Empresario_Cabeza001
+    2300016: Empresario_Cabeza002
+    2300018: Empresario_Cuerpo
+    2300020: Empresario_Cuerpo001
+    2300022: Empresario_Cuerpo002
+    2300024: Empresario_Gafas
+    2300026: Empresario_Gafas001
+    2300028: Empresario_Gafas002
+    2300030: Empresario_Maletin
+    2300032: Empresario_Maletin001
+    2300034: Empresario_Maletin002
+    2300036: Empresario_Pelo
+    2300038: Empresario_Pelo001
+    2300040: Empresario_Pelo002
+    2300042: Empresario_Pier_Der
+    2300044: Empresario_Pier_Der001
+    2300046: Empresario_Pier_Der002
+    2300048: Empresario_Pier_Izq
+    2300050: Empresario_Pier_Izq001
+    2300052: Empresario_Pier_Izq002
+    2300054: Rascacielos
+    3300000: Cientifico_Corbata
+    3300002: Cientifico_Corbata001
+    3300004: Cientifico_Corbata002
+    3300006: Empresario_Bata
+    3300008: Empresario_Bata001
+    3300010: Empresario_Bata002
+    3300012: Empresario_Cabeza
+    3300014: Empresario_Cabeza001
+    3300016: Empresario_Cabeza002
+    3300018: Empresario_Cuerpo
+    3300020: Empresario_Cuerpo001
+    3300022: Empresario_Cuerpo002
+    3300024: Empresario_Gafas
+    3300026: Empresario_Gafas001
+    3300028: Empresario_Gafas002
+    3300030: Empresario_Maletin
+    3300032: Empresario_Maletin001
+    3300034: Empresario_Maletin002
+    3300036: Empresario_Pelo
+    3300038: Empresario_Pelo001
+    3300040: Empresario_Pelo002
+    3300042: Empresario_Pier_Der
+    3300044: Empresario_Pier_Der001
+    3300046: Empresario_Pier_Der002
+    3300048: Empresario_Pier_Izq
+    3300050: Empresario_Pier_Izq001
+    3300052: Empresario_Pier_Izq002
+    3300054: Rascacielos
+    4300000: Rascacielos
+    4300002: Empresario_Cuerpo
+    4300004: Empresario_Cabeza
+    4300006: Empresario_Pelo
+    4300008: Empresario_Gafas
+    4300010: Empresario_Bata
+    4300012: Empresario_Pier_Izq
+    4300014: Empresario_Pier_Der
+    4300016: Empresario_Maletin
+    4300018: Cientifico_Corbata
+    4300020: Empresario_Cuerpo001
+    4300022: Cientifico_Corbata001
+    4300024: Empresario_Maletin001
+    4300026: Empresario_Pier_Der001
+    4300028: Empresario_Bata001
+    4300030: Empresario_Pier_Izq001
+    4300032: Empresario_Cabeza001
+    4300034: Empresario_Pelo001
+    4300036: Empresario_Gafas001
+    4300038: Empresario_Cuerpo002
+    4300040: Cientifico_Corbata002
+    4300042: Empresario_Pier_Der002
+    4300044: Empresario_Pier_Izq002
+    4300046: Empresario_Bata002
+    4300048: Empresario_Maletin002
+    4300050: Empresario_Cabeza002
+    4300052: Empresario_Pelo002
+    4300054: Empresario_Gafas002
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
