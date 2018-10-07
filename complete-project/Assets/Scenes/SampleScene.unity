@@ -973,8 +973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20897d6eac2889e4e8c5b1ae29ee103f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 60
-  matchTime: 60
+  timeLeft: 600
+  matchTime: 600
   matchtext: {fileID: 1490164286}
   SliderCanvas: {fileID: 1536450753}
   populations:
@@ -3288,7 +3288,7 @@ MonoBehaviour:
   m_FillMethod: 0
   m_FillAmount: 0.544
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
 --- !u!222 &1280831377
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4355,9 +4355,9 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.304
+  m_FillAmount: 0.27
   m_FillClockwise: 1
-  m_FillOrigin: 1
+  m_FillOrigin: 0
 --- !u!222 &1540814993
 CanvasRenderer:
   m_ObjectHideFlags: 0

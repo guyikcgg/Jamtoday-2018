@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class MatchManager : MonoBehaviour {
 
-    public int timeLeft = 60;
-    public int matchTime = 60;
+    public int timeLeft; // Modify GameObject
+    public int matchTime;
 
     public Text matchtext;
 
@@ -59,6 +59,7 @@ public class MatchManager : MonoBehaviour {
         matchtext.enabled = true;
         matchtext.text = (matchTime).ToString();
         matchtext.enabled = true;
+        Population pop;
 
         while (matchTime >= 0)
         {
@@ -66,6 +67,21 @@ public class MatchManager : MonoBehaviour {
             yield return new WaitForSeconds(1);
             matchTime--;
 
+            for (int i = 0; i < populations.Length; i++)
+            {
+                pop = populations[i];
+                if (matchTime % pop.timeToDecrease > 0) continue;
+                if (pop.strongAgainst == null) continue;
+                    
+                if (pop.fakePercentage >= pop.threshold)
+                {
+                    pop.strongAgainst.AddPercentage(Enums.PlayerType.fakeNews);
+                }
+                else if (pop.truthPercentage >= pop.threshold)
+                {
+                    pop.strongAgainst.AddPercentage(Enums.PlayerType.truthNews);
+                }   
+            }
         }
         CheckWinner();
     }

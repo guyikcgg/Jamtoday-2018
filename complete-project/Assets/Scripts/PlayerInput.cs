@@ -14,7 +14,7 @@ public class PlayerInput : MonoBehaviour {
     private int[] comboFake;
     private int[] comboTruth;
 
-    private int indexFake, indexTruth;
+    private int indexFake, indexTruth = 0;
 
     private void GenerateCombo(Enums.PlayerType type)
     {
@@ -75,7 +75,10 @@ public class PlayerInput : MonoBehaviour {
 
     private void CheckCombo(Enums.PlayerType type, int input)
     {
-        if(Enums.PlayerType.fakeNews == type)
+        if (comboFake == null || comboFake.Length <= indexFake) return;
+        if (comboTruth == null || comboTruth.Length <= indexTruth) return;
+
+        if (Enums.PlayerType.fakeNews == type)
         {
             if(comboFake[indexFake] == input)
             {

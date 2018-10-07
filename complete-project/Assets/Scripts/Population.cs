@@ -90,42 +90,9 @@ public class Population : MonoBehaviour {
         if (fakePercentage > 100) fakePercentage = 100;
         if (truthPercentage > 100) truthPercentage = 100;
 
-        if (fakePercentage >= threshold && strongAgainst != null)
-        {
-            //StartCoroutine("DecreasePercentage");
-        }
-        else if (truthPercentage >= threshold && strongAgainst != null)
-        {
-            //StartCoroutine("DecreasePercentage");
-        }
-
         matchManager.UpdateSlider();
         UpdatePercentage();
     }
 
-    /*
-    IEnumerator DecreasePercentage()
-    {
-        if (weakAgainst != null)
-        while (fakePercentage >= threshold || truthPercentage >= threshold)
-        {
-            if (fakePercentage > truthPercentage)
-            {
-                print("decrease truth");
-                // weakAgainst.truthPercentage -= decreaseAmmount;
-                weakAgainst.AddPercentage(Enums.PlayerType.fakeNews);
-                //if (weakAgainst.truthPercentage < 0) weakAgainst.truthPercentage = 0;
-            }
-            else if (fakePercentage < truthPercentage)
-            {
-                print("decrease fake");
-                weakAgainst.AddPercentage(Enums.PlayerType.truthNews);
-                //weakAgainst.fakePercentage -= decreaseAmmount;
-                //if (weakAgainst.fakePercentage < 0) weakAgainst.fakePercentage = 0;
-            }
-            yield return new WaitForSeconds(timeToDecrease);
-        }
-    }
-    */
 }
 
